@@ -1,0 +1,36 @@
+funcion media=calcularmedia() //() no reciben ningun valor
+
+	definir vnumeros,tam,suma,i como entero; 
+	definir media como real;
+	
+	suma=0;
+	tam=10;
+	dimension vnumeros[tam];
+	
+	para i=0 hasta tam-1 con paso 1 Hacer
+		vnumeros[i]=-1; // a -1 porque tambien quiero sumar 0
+	FinPara
+	
+	para i=0 hasta tam-1 con paso 1 Hacer
+		si (vnumeros[i])==-1 Entonces
+			leer vnumeros[i];
+			suma=suma+vnumeros[i];
+			media=suma/tam;
+		FinSi
+	FinPara
+
+	escribir "la media es " sin saltar; 
+	
+Finfuncion
+
+	
+Algoritmo ejer2
+	
+	escribir "escribe diez numeros"; 
+	escribir calcularmedia();
+	
+FinAlgoritmo
+
+
+//Realiza el problema anterior creando una función (subproceso) “calcular_media” la cual reciba como parámetros un vector, el tamaño del
+//mismo y devuelve la media de los valores del vector.

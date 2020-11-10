@@ -1,0 +1,25 @@
+Algoritmo intercambio_de_variables
+	
+	definir a,b,c,d Como Entero;
+	
+	a=0;
+	b=0;
+	c=0;
+	d=0;
+	
+	Escribir "dime un numero ";
+	Leer a;
+	Escribir "dime otro numero ";
+	Leer b;
+	c=a;
+	d=b;
+	Escribir "ahora ", a," es ", d;
+	Escribir "y ", b, " es ", c;
+	
+	
+FinAlgoritmo
+
+
+//EJERICIO 1
+//Dadas dos variables numéricas A y B, que el usuario debe teclear, se pide realizar un algoritmo 
+//que intercambie los valores de ambas variables y muestre cuanto valen al final las dos variables (recuerda la asignación).

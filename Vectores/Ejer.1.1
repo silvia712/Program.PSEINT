@@ -1,0 +1,31 @@
+Algoritmo ejer1
+	
+	definir vnumeros,tam,suma,i como entero; 
+	definir media como real;
+	
+	suma=0;
+	tam=10;
+	dimension vnumeros[tam];
+	
+	escribir " escribe diez numeros"; 
+	
+	para i=0 hasta tam-1 con paso 1 Hacer
+		vnumeros[i]=-1; // a -1 porque tambien quiero sumar 0 
+	FinPara
+	
+	para i=0 hasta tam-1 con paso 1 Hacer
+		si (vnumeros[i])==-1 Entonces
+			leer vnumeros[i];
+			suma=suma+vnumeros[i];
+		FinSi
+	FinPara
+	
+	media=suma/tam;
+	escribir "la media es ", media;
+
+	
+FinAlgoritmo
+
+
+//Crea un vector con un tamaño de 10, el algoritmo te solicitará por 
+//teclado 10 números y terminará mostrando por pantalla la media de valores del vector.

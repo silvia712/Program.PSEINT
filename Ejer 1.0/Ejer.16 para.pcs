@@ -1,0 +1,30 @@
+Algoritmo ejercicio16
+	
+	Definir contraseña Como Caracter;
+	Definir i Como Entero;
+	
+	contraseña = "";
+	i = 1; //contador
+	
+	Para i=1 Hasta 3 Con Paso 1 Hacer
+		Escribir "escribe una contraseña";
+		leer contraseña;
+		contraseña = Minusculas(contraseña);
+	
+		Si (contraseña == "eureka") Entonces
+			escribir "bienvenido";
+		SiNo
+			si (i=3) entonces 
+				escribir "se han agotado los intentos ";
+			finsi
+		FinSi
+	fin para
+
+FinAlgoritmo
+
+
+//Teniendo en cuenta que la clave es "eureka", escribir un algoritmo que nos pida una clave.
+//Solo tenemos 3 intentos para acertar, si fallamos los 3 intentos nos mostrara un
+//mensaje indicándonos que hemos agotado esos 3 intentos. (Recomiendo utilizar un interruptor). 
+//Si acertamos la clave, saldremos directamente del programa.
+
